@@ -8,17 +8,29 @@ shodan : http.favicon.hash:-991649870
 
 
 POST /index_connexion_atawa.php?resolution=1920x1080 HTTP/1.1
+
 Host: xx
+
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+
 Accept-Language: en-GB,en;q=0.5
+
 Accept-Encoding: gzip, deflate
+
 Content-Type: application/x-www-form-urlencoded
+
 Content-Length: 19
+
 Origin: xx
+
 Connection: close
+
 Cookie: PHPSESSID=ww
+
 Upgrade-Insecure-Requests: 1
+
 
 login=test&pwd=test
 
